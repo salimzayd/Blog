@@ -9,7 +9,7 @@ const Createblog = () =>{
   const Title = useRef({})
   const Content = useRef({})
   const handlechange = () =>{
-    if(Title.current.value === ""&& Content.current.value===""){
+    if(Title.current.value === ""&& Content.current.value ===""){
       Toast.error("please input the task");
       return;
     }
@@ -27,7 +27,7 @@ const Createblog = () =>{
       <Navbar className="shadow p-3 mb-5bg-white rounded" style={{height:"5.5rem"}}>
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text className="m-5">
-            {/* <h6>write your thoughts here</h6> */}
+        
           </Navbar.Text>
         </Navbar.Collapse>
       </Navbar>
@@ -39,7 +39,7 @@ const Createblog = () =>{
           <textarea className="mt-5 rounded " name="" id="" cols="80"  rows="12" placeholder="write.body..." ref={Content}></textarea>
           <br />
           <Link to={"/blogs"}>
-            <button type="submit" className="btn btn-primary mt-2 h-10 w-25" onClick={handlechange}>SAVE </button>
+            <button type="submit" className="btn btn-primary mt-2 h-10 w-25" onClick={handlechange}>Save </button>
             </Link>
 
        </div>
